@@ -91,16 +91,44 @@ if (heroSection) {
 }
 
 // --- 4. Data & Settings ---
-const BUSINESS_PHONE = "919004365706"; 
+const BUSINESS_PHONE = "919004365706";
+const BUSINESS_PHONE_2 = "919406562823";
 
-// Replaced explicit terms with premium, search-engine-safe keywords to prevent SafeSearch filtering
 const profiles = [
-    { name: "Anjali", age: 23, image: "images/PI/image6.jpeg", services: ["VIP Dating", "Private Events", "Companionship"] },
-    { name: "Priya", age: 25, image: "images/PI/image7.jpeg", services: ["Dinner Dates", "Travel Partner", "Weekend Getaways"] },
-    { name: "Neha", age: 21, image: "images/PI/image23.jpeg", services: ["Clubbing", "Party Model", "Exclusive Meetups"] },
-    { name: "Kavita", age: 24, image: "images/PI/image26.jpeg", services: ["VIP Events", "Dinner Dates", "Companionship"] },
-    { name: "Roshni", age: 22, image: "images/PI/image14.jpeg", services: ["Dating", "Weekend Getaways", "Private Events"] },
-    { name: "Simran", age: 26, image: "images/PI/image27.jpeg", services: ["Travel Partner", "Event Companion", "Dinner Dates"] }
+    { name: "Anjali", age: 23, image: "images/PI/image1.jpeg", services: ["Doggy Style", "Deep Throat", "Reverse Cowgirl"] },
+    { name: "Priya", age: 28, image: "images/PI/image2.jpeg", services: ["Cowgirl", "Oral", "GFE"] },
+    { name: "Neha", age: 19, image: "images/PI/image3.jpeg", services: ["Anal", "Oral", "Missionary"] },
+    { name: "Kavita", age: 28, image: "images/PI/image4.jpeg", services: ["Cowgirl", "69 Position", "Deep Throat"] },
+    { name: "Roshni", age: 28, image: "images/PI/image5.jpeg", services: ["Anal", "69 Position", "Oral"] },
+    { name: "Simran", age: 26, image: "images/PI/image6.jpeg", services: ["GFE", "French Kissing", "Cowgirl"] },
+    { name: "Pooja", age: 26, image: "images/PI/image7.jpeg", services: ["Reverse Cowgirl", "Cowgirl", "69 Position"] },
+    { name: "Riya", age: 26, image: "images/PI/image8.jpeg", services: ["Missionary", "Oral", "Cowgirl"] },
+    { name: "Sneha", age: 19, image: "images/PI/image9.jpeg", services: ["GFE", "French Kissing", "Body to Body"] },
+    { name: "Aarti", age: 26, image: "images/PI/image10.jpeg", services: ["Anal", "Oral", "Deep Throat"] },
+    { name: "Kiran", age: 26, image: "images/PI/image11.jpeg", services: ["Reverse Cowgirl", "French Kissing", "Cowgirl"] },
+    { name: "Divya", age: 26, image: "images/PI/image12.jpeg", services: ["Anal", "Doggy Style", "GFE"] },
+    { name: "Megha", age: 18, image: "images/PI/image13.jpeg", services: ["Reverse Cowgirl", "Missionary", "GFE"] },
+    { name: "Swati", age: 22, image: "images/PI/image14.jpeg", services: ["Doggy Style", "Cowgirl", "GFE"] },
+    { name: "Nidhi", age: 24, image: "images/PI/image15.jpeg", services: ["Oral", "Anal", "Body to Body"] },
+    { name: "Nisha", age: 18, image: "images/PI/image16.jpeg", services: ["GFE", "69 Position", "Oral"] },
+    { name: "Shruti", age: 21, image: "images/PI/image17.jpeg", services: ["69 Position", "Missionary", "Anal"] },
+    { name: "Sonam", age: 27, image: "images/PI/image18.jpeg", services: ["69 Position", "GFE", "Oral"] },
+    { name: "Jyoti", age: 22, image: "images/PI/image19.jpeg", services: ["Body to Body", "Reverse Cowgirl", "GFE"] },
+    { name: "Shikha", age: 21, image: "images/PI/image20.jpeg", services: ["Missionary", "Deep Throat", "French Kissing"] },
+    { name: "Anita", age: 19, image: "images/PI/image21.jpeg", services: ["Doggy Style", "GFE", "Cowgirl"] },
+    { name: "Suman", age: 26, image: "images/PI/image22.jpeg", services: ["Anal", "French Kissing", "Cowgirl"] },
+    { name: "Radhika", age: 23, image: "images/PI/image23.jpeg", services: ["Anal", "Missionary", "Reverse Cowgirl"] },
+    { name: "Ruchi", age: 19, image: "images/PI/image24.jpeg", services: ["Reverse Cowgirl", "French Kissing", "69 Position"] },
+    { name: "Poonam", age: 26, image: "images/PI/image25.jpeg", services: ["Deep Throat", "Reverse Cowgirl", "Body to Body"] },
+    { name: "Rakhi", age: 18, image: "images/PI/image26.jpeg", services: ["Cowgirl", "GFE", "French Kissing"] },
+    { name: "Sapna", age: 20, image: "images/PI/image27.jpeg", services: ["Doggy Style", "French Kissing", "Missionary"] },
+    { name: "Preeti", age: 25, image: "images/PI/image28.jpeg", services: ["69 Position", "French Kissing", "Doggy Style"] },
+    { name: "Shweta", age: 21, image: "images/PI/image29.jpeg", services: ["Doggy Style", "GFE", "French Kissing"] },
+    { name: "Kajal", age: 21, image: "images/PI/image30.jpeg", services: ["Oral", "French Kissing", "Missionary"] },
+    { name: "Ritika", age: 18, image: "images/PI/image31.jpeg", services: ["French Kissing", "Deep Throat", "Cowgirl"] },
+    { name: "Muskan", age: 18, image: "images/PI/image32.jpeg", services: ["GFE", "Oral", "Anal"] },
+    { name: "Kirti", age: 27, image: "images/PI/image33.jpeg", services: ["Anal", "Oral", "Body to Body"] },
+    { name: "Tanya", age: 27, image: "images/PI/image34.jpeg", services: ["Doggy Style", "Missionary", "French Kissing"] }
 ];
 
 // --- 5. Render Profiles ---
@@ -119,12 +147,12 @@ if (container) {
         const encodedMessage = encodeURIComponent(waMessage);
         
         const waLink = `https://wa.me/${BUSINESS_PHONE}?text=${encodedMessage}`;
+        const waLink2 = `https://wa.me/${BUSINESS_PHONE_2}?text=${encodedMessage}`;
         const callLink = `tel:+${BUSINESS_PHONE}`;
 
-        // Added highly optimized alt tags for image SEO
         card.innerHTML = `
             <div class="img-container">
-                <img src="${profile.image}" alt="${profile.name} - Premium Escort and VIP Companion in Indore">
+                <img src="${profile.image}" alt="${profile.name} - Premium Escort and VIP Companion in Indore and Ujjain">
             </div>
             <div class="profile-info">
                 <h3>${profile.name}, ${profile.age}</h3>
@@ -132,9 +160,10 @@ if (container) {
                     ${bubblesHTML}
                 </div>
             </div>
-            <div class="actions">
-                <a href="${callLink}" class="action-btn btn-call">📞 Call</a>
-                <a href="${waLink}" class="action-btn btn-whatsapp">💬 WhatsApp</a>
+            <div class="actions" style="flex-wrap: wrap;">
+                <a href="${callLink}" class="action-btn btn-call">📞 +91 9004365706</a>
+                <a href="${waLink}" class="action-btn btn-whatsapp">💬 +91 9004365706</a>
+                <a href="${waLink2}" class="action-btn btn-whatsapp" style="margin-top: 10px; flex: 1 1 100%;">💬 +91 9406562823</a>
             </div>
         `;
         container.appendChild(card);
@@ -156,3 +185,4 @@ document.addEventListener("DOMContentLoaded", function() {
     const fadeElements = document.querySelectorAll('.fade-up');
     fadeElements.forEach(el => observer.observe(el));
 });
+
